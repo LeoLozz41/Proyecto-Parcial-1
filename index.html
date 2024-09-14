@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl & Beats</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Vinyl & Beats</div>
+        <input type="text" placeholder="Buscar">
+        <nav >
+            <ul>
+                <li>Explorar</li>
+                <li>Mercado Online</li>
+                <li>Comunidad</li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button>Iniciar sesión</button>
+            <button class="register">Regístrate</button>
+        </div>
+        <button id="hamburger-menu" class="hamburger">&#9776;</button> 
+    </header>
+
+    <main>
+        <aside class="filters">
+            <h3>Filtros Aplicados</h3>
+            <ul>
+                <li class="active">Rock</li>
+            </ul>
+        
+            <h4>Género</h4>
+            <ul>
+                <li >Pop</li>
+                <li >Electronic</li>
+                <li >Funk/Soul</li>
+                <li >Blues</li>
+                <li >Oldies</li>
+                <li >Todo</li>
+            </ul>
+        
+            <h4>Estilo</h4>
+            <ul>
+                <li>Pop Rock</li>
+                <li>Punk</li>
+                <li>Rock Alternativo</li>
+                <li>Indie Alternativo</li>
+                <li>Hard Rock</li>
+            </ul>
+        
+            <h4>Formato</h4>
+            <ul>
+                <li>Vinyl</li>
+                <li>Album</li>
+                <li>CD</li>
+                <li>LP</li>
+            </ul>
+        
+            <h4>País</h4>
+            <ul>
+                <li>UK</li>
+                <li>US</li>
+                <li>Japón</li>
+                <li>Korea</li>
+                <li>México</li>
+            </ul>
+        </aside>
+
+        <section class="albums">
+            <h2>Explorando Rock</h2>
+            <div class="album-grid">
+                <a class="album"><img src="/img/nirv.jpg" alt="Nirvana - Nevermind">Nirvana <br> Nervermind</a>
+                <a class="album"><img src="/img/pink.jpg" alt="Pink Floyd - Dark Side of the Moon"> Pink Floyd <br> Dark Side of the Moon</a>
+                <a class="album"><img src="/img/rumors.jpeg" alt="Fleetwood Mac - Rumours">Fleetwood Mac <br> Rumors</a>
+                <a class="album"><img src="/img/david.jpg" alt="David Bowie - Aladdin Sane"> David Bowie <br> Aladdin Sane</a>
+                <a class="album"><img src="/img/nirv.png" alt="Nirvana">Nirvana <br> Nirvana</a>
+                <a class="album"><img src="/img/green.jpg" alt="Green Day - American Idiot">Green Day <br> American Idiot</a>
+                <a class="album"><img src="/img/jimi.jpg" alt="Jimi Hendrix - Are You Experienced"> Jimi Hendrix <br> Are You Experienced</a>
+                <a class="album"><img src="/img/beatles.jpg" alt="The Beatles - Abbey Road">The Beatles <br> Abbey Road</a>
+                <a class="album"><img src="/img/metallica.jpg" alt="Metallica - Kill 'Em All">Metallica <br> Kill'Em All</a>
+                <a class="album"><img src="/img/white.jpg" alt="The White Stripes">The White Stripes <br> The White Stripes</a>
+                <a class="album"><img src="/img/Help.jpg" alt="The Beatles - Help!">The Beatles <br> Help!</a>
+                <a class="album"><img src="/img/pantera.jpg" alt="Pantera - Far Beyond Driven">Pantera <br> Far Beyond Driven</a>
+                <a class="album"><img src="/img/meta.jpg" alt="Metallica - Garage Inc.">Metallica <br> Garage Inc.</a>
+                <a class="album"><img src="/img/images.jpg" alt="The Beatles - 1">The Beatles <br> 1</a>
+                <a class="album"><img src="/img/cover.jpg" alt="King Crimson - In the Court of the Crimson King">King Crimson <br> In the Court of the Crimson King</a>
+                <a class="album"><img src="/img/led.jpeg" alt="The Beatles - 1">Led Zeppelin <br> Led Zeppelin</a>
+            </div>
+        </section>
+    </main>
+    <script>
+
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const asideMenu = document.querySelector('aside');
+ 
+    hamburgerMenu.addEventListener('click', () => {
+    asideMenu.classList.toggle('active');
+    });
+    </script>
+
+</body>
+</html>
